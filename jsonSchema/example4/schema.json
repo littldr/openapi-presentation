@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "persons": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Dog" }
+    }
+  },
+  "definitions": {
+    "Dog": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "age": { "type": "number", "minimum": 6 }
+      },
+      "required": [ "name", "age" ]
+    }
+  }
+}

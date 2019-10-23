@@ -1,0 +1,23 @@
+openapi: 3.0.2
+info:
+  title: Dog Management API
+  version: 1.0.0
+paths:
+  '/dogs/{dogId}':
+    parameters:
+      - name: dogId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      responses:
+        '200':
+          description: Successfully returns dog information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string

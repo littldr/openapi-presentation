@@ -1,0 +1,12 @@
+{
+  "dogs": [
+    {
+      "name": "Winnie the Poodle",
+      "age": 7
+    },
+    {
+      "name": "Chewbarka",
+      "age": 5
+    }
+  ]
+}
